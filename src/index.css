@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary-t-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary
+}
+
+.secondary-t-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-b from-light-1 to-light-2
+}
