@@ -16,7 +16,7 @@ export default {
         "light-2": "#89909aff"
       },
       screens: {
-        'xmd': '920px'
+        'xmd': '800px'
       }
     },
   },
