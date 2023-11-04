@@ -1,5 +1,6 @@
 import About from "./app/About";
 import Home from "./app/Home";
+import Projects from "./app/Projects";
 import LeftSideBar from "./components/LeftSideBar";
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
               <LeftSideBar />
             </nav>
 
-            <article className="col-span-1 max-xmd:col-span-2 flex flex-col">
+            <article className="col-span-1 max-xmd:col-span-2 flex flex-col py-24 px-14 max-xmd:px-2">
               <About />
+              <Projects />
             </article>
           </div>
         </main>

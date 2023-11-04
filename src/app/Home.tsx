@@ -11,7 +11,7 @@ const Home = () => {
           className="w-80 h-72 object-contain absolute bottom-16 z-10"
         />
 
-        <h1 className="text-6xl font-bold text-light-1 z-20 tracking-[-0.275rem] text-center xmd:text-8xl">
+        <h1 className="max-xl:text-6xl max-sm:text-5xl font-bold text-light-1 z-20 tracking-[-0.275rem] text-center xl:text-8xl">
           Hi, I'm{" "}
           <span className="font-extrabold primary-t-gradient">AndruTRADX</span>
         </h1>

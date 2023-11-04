@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div id="about" className="flex-col flex py-24 px-14 xmd:px-2 justify-between gap-4">
-      <p className="text-lg font-semibold text-light-2">
+    <aside id="about" className="flex-col flex max-xmd:px-2 justify-between gap-4">
+      <p className="text-p-1">
         I am a dedicated{" "}
         <span className="text-light-1">Full Stack developer</span> with a focus
         on <span className="text-light-1">JavaScript</span> technologies, adept
@@ -12,7 +12,7 @@ const About = () => {
         set.
       </p>
 
-      <p className="text-lg font-semibold text-light-2">
+      <p className="text-p-1">
         I thrive on embracing new challenges and opportunities for professional
         growth. My core emphasis lies in crafting efficient, scalable solutions
         that prioritize an exceptional user experience. I consider myself an
@@ -20,7 +20,7 @@ const About = () => {
         eager to confront fresh challenges and acquire knowledge in emerging
         technologies.
       </p>
-    </div>
+    </aside>
   );
 };
 

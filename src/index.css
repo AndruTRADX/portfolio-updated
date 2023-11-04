@@ -9,3 +9,23 @@
 .secondary-t-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-b from-light-1 to-light-2
 }
+
+.subtitle-p-1 {
+  @apply bg-clip-text text-transparent bg-gradient-to-b from-light-1 to-light-2 text-2xl font-bold
+}
+
+.subtitle-p-2 {
+  @apply text-light-1 text-base font-semibold
+}
+
+.text-p-1 {
+  @apply text-lg font-medium text-light-2 leading-6
+}
+
+.text-p-2 {
+  @apply text-sm font-medium text-light-2 leading-5
+}
+
+.grid-project-card {
+  grid-template-columns: 1fr 2.5fr;
+}
