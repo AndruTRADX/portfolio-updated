@@ -29,3 +29,30 @@
 .grid-project-card {
   grid-template-columns: 1fr 2.5fr;
 }
+
+.footer-gradient {
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  background: linear-gradient(45deg, #8453ddff, #3d0aafff);
+  filter: blur(100px);
+  opacity: 75%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.footer-gradient-md {
+  position: absolute;
+  width: 150px;
+  height: 70px;
+  left: 50%;
+  bottom: 0;
+  background: linear-gradient(45deg, #8453ddff, #3d0aafff);
+  filter: blur(100px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

@@ -1,6 +1,8 @@
 import About from "./app/About";
+import Footer from "./app/Footer";
 import Home from "./app/Home";
 import Projects from "./app/Projects";
+import Skills from "./app/Skills";
 import LeftSideBar from "./components/LeftSideBar";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
             <article className="col-span-1 max-xmd:col-span-2 flex flex-col py-24 px-14 max-xmd:px-2">
               <About />
               <Projects />
+              <Skills />
+              <Footer />
             </article>
           </div>
         </main>

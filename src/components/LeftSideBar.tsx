@@ -23,13 +23,14 @@ const LeftSideBar = () => {
             <HoverDiv />
           </LiHover>
 
-          <LiHover content="Experience">
+          {/* <LiHover content="Experience">
             <HoverDiv />
-          </LiHover>
+          </LiHover> */}
 
           <LiHover content="Projects">
             <HoverDiv />
           </LiHover>
+
           <LiHover content="Skills">
             <HoverDiv />
           </LiHover>
