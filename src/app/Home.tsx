@@ -8,7 +8,7 @@ const Home = () => {
 
       <article className="relative flex justify-center items-center flex-col mt-40">
         <img
-          src="../../public/mii-adx.png"
+          src="https://i.ibb.co/n3J1p4C/e99bf501d5f7b39f5ff93e65d6eaaaaeb69f1e17.png"
           className="w-80 h-72 object-contain absolute bottom-16 z-10"
         />
 
