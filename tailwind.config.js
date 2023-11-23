@@ -10,10 +10,11 @@ export default {
         primary: '#8453ddff',
         secondary: "#3d0aafff",
         "dark-1": "#110f14",
-        "dark-2": "#161616",
-        "dark-3": "#212126",
+        "dark-2": "#1a1820",
+        "dark-3": "#282234",
         "light-1":"#fbfbfbff",
-        "light-2": "#89909aff"
+        "light-2": "#89909aff",
+        "light-3": "#5E5D61"
       },
       screens: {
         'xmd': '800px'

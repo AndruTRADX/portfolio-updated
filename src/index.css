@@ -26,8 +26,16 @@
   @apply text-sm font-medium text-light-2 leading-5
 }
 
-.grid-project-card {
-  grid-template-columns: 1fr 2.5fr;
+.down-arrow {
+  @apply w-6 h-5 blinking-arrow group-hover:scale-110 transition-transform duration-300 object-cover
+}
+
+
+
+@media (min-width: 500px) {
+  .grid-project-card {
+    grid-template-columns: 1fr 2.5fr;
+  }
 }
 
 .footer-gradient {
@@ -55,4 +63,68 @@
   left: 0;
   right: 0;
   margin: auto;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 0.9;
+  }
+  25%, 75% {
+    opacity: 0.05;
+  }
+}
+
+@keyframes blinkColor {
+  0%, 50%, 100% {
+    background-color: #8453ddff;
+  }
+  25%, 75% {
+    background-color: #3d0aafff;
+  }
+}
+
+@keyframes move {
+  0%, 50%, 100% {
+    transform: translateY(0px);
+  }
+  25%, 75% {
+    transform: translateY(4px);
+  }
+}
+
+.blinking-arrow {
+  animation: blink 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.blinking-color {
+  animation: blinkColor 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.moving-arrow_container {
+  animation: move 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@layer utilities {
+  .css-invert {
+    @apply invert-[50%] brightness-200;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1820;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(131, 83, 221, 0.25);
+    border-radius: 50px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8453ddff;
+  }
 }

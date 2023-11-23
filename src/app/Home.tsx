@@ -1,3 +1,4 @@
+import DownIcon from "../common/DownIcon";
 import GridBg from "../components/GridBg";
 
 const Home = () => {
@@ -19,6 +20,8 @@ const Home = () => {
           Fullstack Developer
         </h4>
       </article>
+
+      <DownIcon />
     </main>
   );
 };

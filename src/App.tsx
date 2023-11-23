@@ -17,7 +17,7 @@ function App() {
               <LeftSideBar />
             </nav>
 
-            <article className="col-span-1 max-xmd:col-span-2 flex flex-col py-24 px-14 max-xmd:px-2">
+            <article className="col-span-1 max-xmd:col-span-2 flex flex-col pb-24 px-14 max-xmd:px-2">
               <About />
               <Projects />
               <Skills />
