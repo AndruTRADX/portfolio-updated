@@ -14,9 +14,9 @@ const Skills = () => {
             <LazyImg
               src={item.icon}
               alt={item.name}
-              className="grayscale opacity-50 object-contain w-full h-full max-w-[4.25rem] max-h-[4.25rem] transition duration-300 ease-in-out group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105"
+              className="grayscale opacity-50 object-contain w-full h-full max-w-[4.25rem] max-h-[4.25rem] transition ease-in-out group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105"
             />
-            <p className="text-center opacity-0 group-hover:opacity-95 leading-relaxed transition duration-300 ease-in-out font-semibold text-light-1">
+            <p className="text-center opacity-0 group-hover:opacity-95 leading-relaxed transition ease-in-out font-semibold text-light-1">
               {item.name}
             </p>
           </div>

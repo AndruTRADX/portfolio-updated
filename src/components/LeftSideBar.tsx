@@ -34,6 +34,10 @@ const LeftSideBar = () => {
           <LiHover content="Skills">
             <HoverDiv />
           </LiHover>
+
+          <LiHover content="Contact">
+            <HoverDiv />
+          </LiHover>
         </ul>
       </div>
 

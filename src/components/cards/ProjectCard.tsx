@@ -12,7 +12,7 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
       <div className="flex relative h-min max-[500px]:hidden">
         <div className="absolute opacity-0 group-hover:opacity-100 w-full h-full max-w-[8rem] rounded-md blinking-color scale-[1.07]" />
         <img
-          className="object-cover w-[8rem] h-[5rem] rounded-md shadow-xl border-2 border-dark-2 z-10"
+          className="object-cover w-[8rem] h-[5rem] rounded-md shadow-lg border-2 border-dark-2 z-10 shadow-dark-0 group-hover:shadow-none"
           src={projectData.image}
           alt={projectData.name}
         />

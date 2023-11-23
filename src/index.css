@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+input, textarea {
+  color: #fbfbfbff;
+}
+
+.primary-b-gradient {
+  @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+}
+
+
 .primary-t-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary
 }
