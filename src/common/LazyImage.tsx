@@ -8,7 +8,7 @@ type ImageNativeTypes = ImgHTMLAttributes<HTMLImageElement>
 
 type Props = LazyImageProps & ImageNativeTypes
 
-export default function LazyImage( { src }: Props ):JSX.Element {  
+export default function LazyImage( { src, className }: Props ):JSX.Element {  
   const node = useRef<HTMLImageElement> (null)
   const [currentSrc, setCurrentSrc] = useState<string | undefined>(base64img)
 
@@ -36,6 +36,6 @@ export default function LazyImage( { src }: Props ):JSX.Element {
   },[src])
 
   return (
-    <img ref={node} src={currentSrc} />
+    <img ref={node} src={currentSrc} className={className} />
   )
 }
