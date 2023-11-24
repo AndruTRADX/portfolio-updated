@@ -12,7 +12,7 @@ function App() {
       <div className="bg-dark-1 flex flex-col">
         <Home />
 
-        <main className="px-8 relative flex items-center max-w-[1100px] mx-auto">
+        <main className="px-8 relative flex items-center max-w-[1200px] mx-auto">
           <div className="grid grid-cols-2 gap-2 h-full w-full">
             <nav className="flex col-span-1 max-xmd:col-span-2 top-0 h-screen max-xmd:h-auto min-[800px]:sticky gap-3">
               <LeftSideBar />

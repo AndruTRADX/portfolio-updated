@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <aside id="skills" className="flex flex-col pt-11">
       <h2 className="subtitle-p-1">Skills</h2>
-      <div className="grid grid-cols-4 gap-2 mt-6">
+      <div className="grid grid-cols-4 max-[500px]:grid-cols-3 gap-2 mt-6">
         {technologies.map((item) => (
           <div
             key={`tech-icon-${item.name}`}

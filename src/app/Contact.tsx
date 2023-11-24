@@ -40,24 +40,21 @@ const Contact = () => {
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you, I'll answer you as soon as possible :3");
+      .then(() => {
+        setLoading(false);
+        alert("Thank you, I'll answer you as soon as possible :3");
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Seems like something went wrong :(, please try again.");
-        }
-      );
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+        setLoading(false);
+        alert("Seems like something went wrong :(, please try again.");
+      });
   };
 
   return (
