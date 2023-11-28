@@ -1,41 +1,43 @@
-// import { Image } from 'antd'
-import { useRef, useEffect, useState } from 'react'
-import type { ImgHTMLAttributes } from 'react'
-import { base64img } from './img'
+import { useRef, useEffect, useState } from "react";
+import type { ImgHTMLAttributes } from "react";
+import { base64img } from "./img";
 
-type LazyImageProps = { src: string | undefined }
-type ImageNativeTypes = ImgHTMLAttributes<HTMLImageElement>
+type LazyImageProps = { src: string | undefined };
+type ImageNativeTypes = ImgHTMLAttributes<HTMLImageElement>;
 
-type Props = LazyImageProps & ImageNativeTypes
+type Props = LazyImageProps & ImageNativeTypes;
 
-export default function LazyImage( { src, className }: Props ):JSX.Element {  
-  const node = useRef<HTMLImageElement> (null)
-  const [currentSrc, setCurrentSrc] = useState<string | undefined>(base64img)
+export default function LazyImage({ src, className }: Props): JSX.Element {
+  const node = useRef<HTMLImageElement>(null);
+  const [currentSrc, setCurrentSrc] = useState<string | undefined>(base64img);
 
   useEffect(() => {
-
-    // nuevo observador
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
+    // new observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setCurrentSrc(src)
+          setCurrentSrc(src);
         }
-      })
-    })
-  
-    // observar node
+      });
+    });
+
+    // observe node
     if (node.current) {
-      observer.observe(node.current)
+      observer.observe(node.current);
     }
 
-    // desconectar observador
+    // disconnect observer
     return () => {
-      observer.disconnect()
-    }
-
-  },[src])
+      observer.disconnect();
+    };
+  }, [src]);
 
   return (
-    <img ref={node} src={currentSrc} className={className} />
-  )
+    <img
+      ref={node}
+      src={currentSrc}
+      alt="loading image"
+      className={className}
+    />
+  );
 }

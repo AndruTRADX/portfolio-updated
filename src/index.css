@@ -28,7 +28,7 @@ input, textarea {
 }
 
 .text-p-1 {
-  @apply text-lg font-medium text-light-2 leading-6
+  @apply text-base font-medium text-light-2 leading-6
 }
 
 .text-p-2 {

@@ -9,16 +9,19 @@ const DownIcon = () => {
     >
       <img
         src={ArrowDown}
+        alt="Arrow Down"
         className="down-arrow mb-[-8px]"
         style={{ animationDelay: "0.3s" }}
       />
       <img
         src={ArrowDown}
+        alt="Arrow Down"
         className="down-arrow mb-[-8px]"
         style={{ animationDelay: "0.6s" }}
       />
       <img
         src={ArrowDown}
+        alt="Arrow Down"
         className="down-arrow"
         style={{ animationDelay: "0.9s" }}
       />

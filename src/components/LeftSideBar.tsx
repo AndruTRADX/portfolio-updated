@@ -7,7 +7,7 @@ const LeftSideBar = () => {
   return (
     <aside className="h-full pt-24 pb-24 max-xmd:pb-0 px-14 max-xmd:px-2 flex-col flex justify-between">
       <div className="flex flex-col gap-2">
-        <h2 className="primary-t-gradient font-extrabold text-6xl max-sm:text-4xl opacity-75">
+        <h2 className="text-light-1 font-extrabold text-6xl max-sm:text-4xl opacity-80">
           AndruTRADX
         </h2>
         <p className="secondary-t-gradient font-bold text-xl underline decoration-primary">
