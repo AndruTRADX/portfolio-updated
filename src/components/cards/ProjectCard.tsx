@@ -23,20 +23,22 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
           {projectData.name}
         </p>
         <p className="text-p-2">{projectData.description}</p>
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            window.open(projectData.github, "_blank");
-          }}
-          className="flex gap-2 items-center text-light-1 font-semibold after:content-['→'] opacity-50 transition-opacity hover:opacity-100 cursor-pointer duration-200"
-        >
-          <LazyImg
-            src={Github}
-            alt={`github-${projectData.name}-link`}
-            className="h-6 w-6 object-cover"
-          />{" "}
-          GitHub
-        </button>
+        <div>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(projectData.github, "_blank");
+            }}
+            className="flex gap-2 items-center text-light-1 font-semibold after:content-['→'] opacity-50 transition-opacity hover:opacity-100 cursor-pointer duration-200"
+          >
+            <LazyImg
+              src={Github}
+              alt={`github-${projectData.name}-link`}
+              className="h-6 w-6 object-cover"
+            />{" "}
+            GitHub
+          </button>
+        </div>
       </div>
     </a>
   );

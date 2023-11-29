@@ -119,9 +119,8 @@ input, textarea {
   }
 
   ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
+    width: 8px;
+    height: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -129,8 +128,7 @@ input, textarea {
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(131, 83, 221, 0.25);
-    border-radius: 50px;
+    background: rgba(131, 83, 221, 0.50);
   }
 
   ::-webkit-scrollbar-thumb:hover {
