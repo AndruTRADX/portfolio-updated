@@ -4,10 +4,12 @@ import { ProjectDataType } from "../../constants/projects";
 
 const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
   return (
-    <a
-      href={projectData.project}
-      target="_blank"
-      className="p-3 grid grid-project-card rounded-lg gap-4 border border-transparent hover:bg-dark-2 hover:border-dark-3 duration-150 group"
+    <div
+      onClick={(e) => {
+        e.stopPropagation()
+        window.open(projectData.project, '_blank')
+      }}
+      className="p-3 grid grid-project-card rounded-lg gap-4 border border-transparent hover:bg-dark-2 hover:border-dark-3 duration-150 group hover:cursor-pointer"
     >
       <div className="flex relative h-min max-[500px]:hidden">
         <div className="absolute opacity-0 group-hover:opacity-100 w-full h-full max-w-[8rem] rounded-sm blinking-color scale-[1.07]" />
@@ -24,7 +26,7 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
         </p>
         <p className="text-p-2">{projectData.description}</p>
         <div>
-          <button
+          <div
             onClick={(e) => {
               e.stopPropagation();
               window.open(projectData.github, "_blank");
@@ -37,10 +39,10 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
               className="h-6 w-6 object-cover"
             />{" "}
             GitHub
-          </button>
+          </div>
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 

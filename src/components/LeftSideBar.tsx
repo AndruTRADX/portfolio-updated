@@ -10,7 +10,7 @@ const LeftSideBar = () => {
         <h2 className="text-light-1 font-extrabold text-6xl max-sm:text-4xl opacity-80">
           AndruTRADX
         </h2>
-        <p className="secondary-t-gradient font-bold text-xl underline decoration-primary">
+        <p className="secondary-t-gradient font-semibold text-xl underline decoration-primary">
           Fullstack Developer
         </p>
         <p className="text-p-1">
@@ -18,7 +18,7 @@ const LeftSideBar = () => {
           exceptional user experience.
         </p>
 
-        <ul className="text-p-1 flex flex-col gap-1 mt-8">
+        <ul className="text-base font-medium text-light-1/50 leading-6 flex flex-col gap-1 mt-8">
           <LiHover content="About">
             <HoverDiv />
           </LiHover>

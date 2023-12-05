@@ -10,7 +10,6 @@ input, textarea {
   @apply bg-gradient-to-r from-cyan-500 to-blue-500;
 }
 
-
 .primary-t-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary
 }
@@ -20,19 +19,23 @@ input, textarea {
 }
 
 .subtitle-p-1 {
-  @apply bg-clip-text text-transparent bg-gradient-to-b from-light-1 to-light-2 text-2xl font-bold
+  @apply bg-clip-text text-light-1/90 text-2xl font-semibold
 }
 
 .subtitle-p-2 {
-  @apply text-light-1 text-base font-semibold
+  @apply text-light-1 text-base font-medium
 }
 
 .text-p-1 {
-  @apply text-base font-medium text-light-2 leading-6
+  @apply text-base font-normal text-light-1/50 leading-6
+}
+
+.text-p-1-focus {
+  @apply text-base font-medium text-light-1/90 leading-6
 }
 
 .text-p-2 {
-  @apply text-sm font-medium text-light-2 leading-5
+  @apply text-sm font-normal text-light-1/50 leading-5
 }
 
 .down-arrow {
@@ -43,7 +46,7 @@ input, textarea {
 
 @media (min-width: 500px) {
   .grid-project-card {
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 1fr 2.25fr;
   }
 }
 

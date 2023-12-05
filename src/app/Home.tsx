@@ -17,7 +17,7 @@ const Home = () => {
           Hi, I'm{" "}
           <span className="font-extrabold primary-t-gradient">AndruTRADX</span>
         </h1>
-        <h2 className="text-2xl font-bold z-20 secondary-t-gradient tracking-tight underline decoration-primary">
+        <h2 className="text-2xl font-semibold z-20 secondary-t-gradient tracking-tight underline decoration-primary">
           Fullstack Developer
         </h2>
       </article>
