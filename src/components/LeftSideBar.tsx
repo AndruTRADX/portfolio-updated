@@ -6,11 +6,11 @@ import { Media } from "../constants/media";
 const LeftSideBar = () => {
   return (
     <aside className="h-full pt-24 pb-24 max-xmd:pb-0 px-14 max-xmd:px-2 flex-col flex justify-between">
-      <div className="flex flex-col gap-2">
-        <h2 className="text-light-1 font-extrabold text-6xl max-sm:text-4xl opacity-80">
+      <div className="flex flex-col gap-3">
+        <h2 className="text-light-1/70 font-extrabold text-5xl max-sm:text-4xl">
           AndruTRADX
         </h2>
-        <p className="secondary-t-gradient font-semibold text-xl underline decoration-primary">
+        <p className="text-light-1/70 font-semibold text-xl">
           Fullstack Developer
         </p>
         <p className="text-p-1">
@@ -41,7 +41,10 @@ const LeftSideBar = () => {
         </ul>
       </div>
 
-      <div className="mt-12 flex gap-4">
+      <div className="mt-12 flex gap-4 relative">
+        <div className="sidebar-gradient hidden md:flex" />
+        <div className="sidebar-gradient-md flex md:hidden" />
+
         {Media.map((item) => (
           <Icons media={item} key={`icon-list-${item.name}`} />
         ))}

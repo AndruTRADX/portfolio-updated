@@ -4,7 +4,7 @@ const About = () => {
       <p className="text-p-1">
         I am a dedicated{" "}
         <span className="text-p-1-focus">Full Stack developer</span> with a focus
-        on <span className="text-p-1-focus">JavaScript</span> technologies, adept
+        on <span className="text-p-1-focus">JavaScript technologies</span>, adept
         in both <span className="text-p-1-focus">SQL</span> and{" "}
         <span className="text-p-1-focus">NoSQL</span> databases. My journey in
         programming commenced on January 1, 2022, and since then, I've

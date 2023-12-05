@@ -13,7 +13,7 @@ export default {
         "dark-1": "#110f14",
         "dark-2": "#1a1820",
         "dark-3": "#282234",
-        "light-1":"#fbfbfbff",
+        "light-1":"#f9f9faff", // fbfbfbff || f9f9faff
         "light-2": "#89909aff",
         "light-3": "#5E5D61"
       },

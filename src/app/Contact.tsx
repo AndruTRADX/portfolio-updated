@@ -67,7 +67,7 @@ const Contact = () => {
         className="mt-8 flex flex-col gap-8"
       >
         <label className="flex flex-col">
-          <span className="secondary-t-gradient font-bold mb-4">Your name</span>
+          <span className="text-light-1/70 font-bold mb-4">Your name</span>
           <input
             type="text"
             name="name"
@@ -79,7 +79,7 @@ const Contact = () => {
         </label>
 
         <label className="flex flex-col">
-          <span className="secondary-t-gradient font-bold mb-4">
+          <span className="text-light-1/70 font-bold mb-4">
             Your email
           </span>
           <input
@@ -93,7 +93,7 @@ const Contact = () => {
         </label>
 
         <label className="flex flex-col">
-          <span className="secondary-t-gradient font-bold mb-4">
+          <span className="text-light-1/70 font-bold mb-4">
             Your message
           </span>
           <textarea
