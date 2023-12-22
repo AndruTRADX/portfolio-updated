@@ -9,8 +9,7 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
       window.open(projectData.project, "_blank");
     }}>
       <div
-        
-        className="p-3 grid grid-project-card rounded-lg gap-4 border-2 border-transparent group-hover:bg-dark-2 group-hover:border-dark-0  z-10 relative m-[3px]"
+        className="p-3 grid grid-project-card rounded gap-4 border-2 border-transparent group-hover:bg-dark-2 group-hover:border-dark-0  z-10 relative m-[3px]"
       >
         <div className="flex h-min max-[500px]:hidden">
           <img
@@ -44,7 +43,7 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
         </div>
       </div>
 
-      <div className="absolute opacity-0 top-0 group-hover:opacity-100 w-full h-full rounded-lg blinking-color" />
+      <div className="absolute opacity-0 top-0 group-hover:opacity-100 w-full h-full rounded-md blinking-color" />
     </div>
   );
 };

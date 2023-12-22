@@ -19,7 +19,7 @@ input, textarea {
 }
 
 .subtitle-p-1 {
-  @apply bg-clip-text text-light-1/90 text-2xl font-semibold
+  @apply bg-clip-text text-light-1/90 text-2xl font-semibold mb-4
 }
 
 .subtitle-p-2 {
