@@ -35,4 +35,18 @@ export const ProjectsData: ProjectDataType[] = [
     github: "https://github.com/AndruTRADX/metaversus",
     image: "https://i.ibb.co/SBS1Gff/imagen-2023-06-23-105633430.png",
   },
+  {
+    name: "Pokedux",
+    description: "Take a look at these creatures on a nice interface which will show you details about your favorite pokemons.",
+    project: "https://andrutradx.github.io/pokedux/",
+    github: "https://github.com/AndruTRADX/pokedux",
+    image: "https://i.ibb.co/BgYfrz8/imagen-2023-06-23-105742529.png",
+  },
+  {
+    name: "Ts labyrinth",
+    description: "Play a short labyrinth videogame made with canvas and get the best score you can.",
+    project: "https://andrutradx.github.io/ts-juego-laberinto/",
+    github: "https://github.com/AndruTRADX/ts-juego-laberinto",
+    image: "https://i.ibb.co/8475G0w/imagen-2023-06-23-105818167.png",
+  },
 ];

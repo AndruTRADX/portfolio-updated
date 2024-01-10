@@ -1,5 +1,5 @@
-import ProjectCard from "../components/cards/ProjectCard"
-import { ProjectsData } from "../constants/projects"
+import ProjectCard from "../components/cards/ProjectCard";
+import { ProjectsData } from "../constants/projects";
 
 const Projects = () => {
   return (
@@ -12,7 +12,7 @@ const Projects = () => {
         ))}
       </div>
     </aside>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

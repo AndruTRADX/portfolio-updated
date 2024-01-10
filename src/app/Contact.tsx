@@ -1,5 +1,6 @@
 import { useState, useRef, ChangeEventHandler } from "react";
 import emailjs from "@emailjs/browser";
+import Button from "../components/Button";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -79,9 +80,7 @@ const Contact = () => {
         </label>
 
         <label className="flex flex-col">
-          <span className="text-light-1/70 font-bold mb-4">
-            Your email
-          </span>
+          <span className="text-light-1/70 font-bold mb-4">Your email</span>
           <input
             type="text"
             name="email"
@@ -93,9 +92,7 @@ const Contact = () => {
         </label>
 
         <label className="flex flex-col">
-          <span className="text-light-1/70 font-bold mb-4">
-            Your message
-          </span>
+          <span className="text-light-1/70 font-bold mb-4">Your message</span>
           <textarea
             rows={7}
             name="message"
@@ -105,18 +102,9 @@ const Contact = () => {
             className="bg-dark-2 py-2.5 px-3.5 focus:border-primary placeholder:text-light-2 rounded outline-none border border-dark-3 font-medium min-h-[160px] max-h-[365px]"
           />
         </label>
+
         <div className="flex justify-end">
-          <button
-            type="submit"
-            className="flex justify-center items-center relative rounded-md cursor-pointer w-fit outline-none font-medium shadow-md shadow-dark-0 group"
-          >
-            <div className="absolute px-7 py-2.5 blinking-color opacity-0 group-hover:opacity-100 scale-105 rounded z-0 text-lg transition-opacity">
-              {loading ? "Sending..." : "Send"}
-            </div>
-            <div className="bg-dark-2 px-7 py-2.5 rounded text-light-2 group-hover:text-light-1 z-20 border border-dark-3 scale-x-95 scale-y-90 text-lg transition-color">
-              {loading ? "Sending..." : "Send"}
-            </div>
-          </button>
+          <Button text="Send" state={loading} textState="Sending" />
         </div>
       </form>
     </aside>

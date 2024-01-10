@@ -4,13 +4,14 @@ import { ProjectDataType } from "../../constants/projects";
 
 const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
   return (
-    <div className="relative group hover:cursor-pointer" onClick={(e) => {
-      e.stopPropagation();
-      window.open(projectData.project, "_blank");
-    }}>
-      <div
-        className="p-3 grid grid-project-card rounded gap-4 border-2 border-transparent group-hover:bg-dark-2 group-hover:border-dark-0  z-10 relative m-[3px]"
-      >
+    <div
+      className="relative group hover:cursor-pointer"
+      onClick={(e) => {
+        e.stopPropagation();
+        window.open(projectData.project, "_blank");
+      }}
+    >
+      <div className="p-3 grid grid-project-card rounded gap-4 border-2 border-transparent group-hover:bg-dark-2 group-hover:border-dark-0  z-10 relative m-[3px]">
         <div className="flex h-min max-[500px]:hidden">
           <img
             className="object-cover w-[8rem] h-[5rem] shadow-lg border-2 border-dark-1 z-20 shadow-dark-0"
@@ -21,7 +22,7 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
 
         <div className="flex flex-col gap-3">
           <p className="subtitle-p-2 opacity-80 after:ml-2 group-hover:opacity-100 after:content-['→']">
-            {projectData.name} 
+            {projectData.name}
           </p>
           <p className="text-p-2">{projectData.description}</p>
           <div>
