@@ -31,36 +31,4 @@ export const ProjectsData: ProjectDataType[] = [
     github: "https://github.com/AndruTRADX/e-commerce-app",
     image: "https://i.ibb.co/xXYSb4y/image.png",
   },
-  {
-    name: "Products CRUD",
-    description:
-      "Product CRUD functionality implemented with Next.js and Tailwind CSS, empowering users to effortlessly manage and edit their own products.",
-    project: "https://fullstack-products-crud.vercel.app/",
-    github: "https://github.com/AndruTRADX/fullstack-products-crud",
-    image: "https://i.ibb.co/TL7QJ8L/imagen-2023-06-23-105521126.png",
-  },
-  {
-    name: "Metaversus",
-    description:
-      "Join us in an interactive and fun Metaverse experience, complete with captivating animations and a stunning interface.",
-    project: "https://metaversus-andrutradx.vercel.app/",
-    github: "https://github.com/AndruTRADX/metaversus",
-    image: "https://i.ibb.co/SBS1Gff/imagen-2023-06-23-105633430.png",
-  },
-  {
-    name: "Pokedux",
-    description:
-      "Take a look at these creatures on a nice interface which will show you details about your favorite pokemons.",
-    project: "https://andrutradx.github.io/pokedux/",
-    github: "https://github.com/AndruTRADX/pokedux",
-    image: "https://i.ibb.co/BgYfrz8/imagen-2023-06-23-105742529.png",
-  },
-  {
-    name: "Ts labyrinth",
-    description:
-      "Play a short labyrinth videogame made with canvas and get the best score you can.",
-    project: "https://andrutradx.github.io/ts-juego-laberinto/",
-    github: "https://github.com/AndruTRADX/ts-juego-laberinto",
-    image: "https://i.ibb.co/8475G0w/imagen-2023-06-23-105818167.png",
-  },
 ];
