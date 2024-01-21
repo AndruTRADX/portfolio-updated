@@ -9,7 +9,7 @@ import LeftSideBar from "./components/LeftSideBar";
 function App() {
   return (
     <>
-      <div className="bg-dark-1 flex flex-col">
+      <div className="bg-dark-1 flex flex-col relative">
         <Home />
 
         <main className="px-8 relative flex items-center max-w-[1000px] mx-auto">

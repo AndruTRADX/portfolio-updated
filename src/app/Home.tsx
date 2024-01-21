@@ -3,7 +3,7 @@ import GridBg from "../components/GridBg";
 
 const Home = () => {
   return (
-    <main className="min-h-screen flex justify-center items-center">
+    <main className="min-h-screen flex justify-center items-center relative">
       <GridBg />
 
       <article className="relative flex justify-center items-center flex-col mt-40">
