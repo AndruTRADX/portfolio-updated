@@ -11,7 +11,7 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
         window.open(projectData.project, "_blank");
       }}
     >
-      <div className="p-3 grid grid-project-card rounded gap-4 border-2 border-transparent group-hover:bg-dark-2 group-hover:border-dark-0  z-10 relative m-[3px]">
+      <div className="p-3 grid grid-project-card rounded gap-4 border-2 border-transparent bg-dark-1 group-hover:bg-dark-2 group-hover:border-dark-0  z-10 relative m-[3px] transition duration-200">
         <div className="flex h-min max-[500px]:hidden">
           <img
             className="object-cover w-[8rem] h-[5rem] shadow-lg border-2 border-dark-1 z-20 shadow-dark-0"
@@ -44,7 +44,7 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
         </div>
       </div>
 
-      <div className="absolute opacity-0 top-0 group-hover:opacity-100 w-full h-full rounded-md blinking-color" />
+      <div className="absolute opacity-0 top-0 group-hover:opacity-100 w-full h-full rounded-md blinking-color transition duration-200" />
     </div>
   );
 };

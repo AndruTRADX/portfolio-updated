@@ -1,6 +1,7 @@
 import { useState, useRef, ChangeEventHandler } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "../components/Button";
+import Modal from "../components/modal/modal";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -11,6 +12,11 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [sended, setSended] = useState(false);
+  const [modalMessage, setModalMessage] = useState([
+    "Something went wrong",
+    "Seems like something went wrong, please try again later",
+  ]);
 
   const handleChange: ChangeEventHandler<
     HTMLInputElement | HTMLTextAreaElement
@@ -43,7 +49,11 @@ const Contact = () => {
       )
       .then(() => {
         setLoading(false);
-        alert("Thank you, I'll answer you as soon as possible :3");
+        setModalMessage([
+          "Message sent succesfully",
+          "Your message has been sent succesfully, I'll answer as soon as posible.",
+        ]);
+        setSended(true);
 
         setForm({
           name: "",
@@ -54,60 +64,71 @@ const Contact = () => {
       .catch((error) => {
         console.error(error);
         setLoading(false);
-        alert("Seems like something went wrong :(, please try again.");
+        setSended(true);
       });
   };
 
   return (
-    <aside id="contact" className="flex-col flex pt-14 justify-between gap-4">
-      <h2 className="subtitle-p-1">Contact</h2>
+    <>
+      <aside id="contact" className="flex-col flex pt-14 justify-between gap-4">
+        <h2 className="subtitle-p-1">Contact</h2>
 
-      <form
-        ref={formRef}
-        onSubmit={handleSubmit}
-        className="flex flex-col gap-8"
-      >
-        <label className="flex flex-col">
-          <span className="text-light-1/70 font-bold mb-4">Your name</span>
-          <input
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            placeholder="What's your name?"
-            className="bg-dark-2 py-2.5 px-3.5 focus:border-primary placeholder:text-light-2 rounded outline-none border border-dark-3 font-medium"
-          />
-        </label>
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-8"
+        >
+          <label className="flex flex-col">
+            <span className="text-light-1/70 font-bold mb-4">Your name</span>
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="What's your name?"
+              className="bg-dark-2 py-2.5 px-3.5 focus:border-primary placeholder:text-light-2 rounded outline-none border border-dark-3 font-medium"
+            />
+          </label>
 
-        <label className="flex flex-col">
-          <span className="text-light-1/70 font-bold mb-4">Your email</span>
-          <input
-            type="text"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            placeholder="ryangosling@acme.com"
-            className="bg-dark-2 py-2.5 px-3.5 focus:border-primary placeholder:text-light-2 rounded outline-none border border-dark-3 font-medium"
-          />
-        </label>
+          <label className="flex flex-col">
+            <span className="text-light-1/70 font-bold mb-4">Your email</span>
+            <input
+              type="text"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="ryangosling@acme.com"
+              className="bg-dark-2 py-2.5 px-3.5 focus:border-primary placeholder:text-light-2 rounded outline-none border border-dark-3 font-medium"
+            />
+          </label>
 
-        <label className="flex flex-col">
-          <span className="text-light-1/70 font-bold mb-4">Your message</span>
-          <textarea
-            rows={7}
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            placeholder="What do you want to say?"
-            className="bg-dark-2 py-2.5 px-3.5 focus:border-primary placeholder:text-light-2 rounded outline-none border border-dark-3 font-medium min-h-[160px] max-h-[365px]"
-          />
-        </label>
+          <label className="flex flex-col">
+            <span className="text-light-1/70 font-bold mb-4">Your message</span>
+            <textarea
+              rows={7}
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="What do you want to say?"
+              className="bg-dark-2 py-2.5 px-3.5 focus:border-primary placeholder:text-light-2 rounded outline-none border border-dark-3 font-medium min-h-[160px] max-h-[365px]"
+            />
+          </label>
 
-        <div className="flex justify-end">
-          <Button text="Send" state={loading} textState="Sending" />
-        </div>
-      </form>
-    </aside>
+          <div className="flex justify-end">
+            <Button text="Send" state={loading} textState="Sending..." />
+          </div>
+        </form>
+      </aside>
+
+      <Modal
+        isOpen={sended}
+        onClose={() => setSended(false)}
+        onSubmit={() => setSended(false)}
+        title={modalMessage[0]}
+        body={<>{modalMessage[1]}</>}
+        actionLabel={"Accept"}
+      />
+    </>
   );
 };
 

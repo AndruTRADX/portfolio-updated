@@ -128,13 +128,14 @@ input, textarea {
 
   ::-webkit-scrollbar-track {
     background: #1a1820;
+    cursor: pointer;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(131, 83, 221, 0.50);
+    background: #8453ddff;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #8453ddff;
+    cursor: grabbing;
   }
 }
