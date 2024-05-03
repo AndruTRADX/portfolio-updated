@@ -1,7 +1,7 @@
 import Github from "../assets/svg/social/github.svg"
 import LinkedIn from "../assets/svg/social/linkedin.svg"
 import Instagram from "../assets/svg/social/instagram.svg"
-import Platzi from "../assets/svg/social/platzi.svg"
+import Email from "../assets/svg/social/envelope.svg"
 
 export interface MediaType {
   name: string;
@@ -26,8 +26,8 @@ export const Media: MediaType[] = [
     icon: Instagram,
   },
   {
-    name: "Platzi",
-    link: "https://platzi.com/p/AndruTRADX/",
-    icon: Platzi,
+    name: "Email",
+    link: "https://mailto:adxcontacto@gmail.com",
+    icon: Email,
   },
 ];

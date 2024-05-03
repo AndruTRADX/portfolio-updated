@@ -24,11 +24,11 @@ export const ProjectsData: ProjectDataType[] = [
     image: "https://i.ibb.co/ysw1RzS/image-2024-01-10-142339062.png",
   },
   {
-    name: "DevMarket",
+    name: "NZ Walks (API)",
     description:
-      "An e-commerce platform designed and developed with React, Tailwind CSS, and Nest.js. It includes logging functionality, CRUD operations, and advanced product search options.",
-    project: "https://devmarketadx.vercel.app/",
-    github: "https://github.com/AndruTRADX/e-commerce-app",
-    image: "https://i.ibb.co/xXYSb4y/image.png",
+      "A CRUD API built using ASP.NET with C#, allowing users to upload files to create hiking trails across New Zealand with Auth. Deployed on Azure.",
+    project: "https://app-nzwalks-eastus-dev-069.azurewebsites.net/api/regions",
+    github: "https://github.com/AndruTRADX/NZWalks.API",
+    image: "https://i.ibb.co/5WxC5cm/image-2024-05-03-110214547.png",
   },
 ];

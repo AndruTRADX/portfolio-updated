@@ -5,6 +5,18 @@ interface TechnologiesTypes {
 
 export const technologies: TechnologiesTypes[] = [
   {
+    name: "C#",
+    icon: "https://i.ibb.co/Z1CZvZJ/c-sharp-c-456x512.png",
+  },
+  {
+    name: ".NET Core",
+    icon: "https://i.ibb.co/029k5Hy/NET-core.png",
+  },
+  {
+    name: "SQL Server",
+    icon: "https://i.ibb.co/ZhFjDSs/Microsoft-SQL-Server.png"
+  },
+  {
     name: "HTML 5",
     icon: "https://i.ibb.co/g6DHN00/html.png",
   },
@@ -33,6 +45,10 @@ export const technologies: TechnologiesTypes[] = [
     icon: "https://i.ibb.co/tcjmgQx/tailwind.png",
   },
   {
+    name: "Next JS",
+    icon: "https://i.ibb.co/R6T0547/nextjs.png",
+  },
+  {
     name: "Node JS",
     icon: "https://i.ibb.co/WcvCx9s/nodejs.png",
   },
@@ -57,17 +73,9 @@ export const technologies: TechnologiesTypes[] = [
     icon: "https://i.ibb.co/R4znCTz/postgres.png",
   },
   {
-    name: "Next JS",
-    icon: "https://i.ibb.co/R6T0547/nextjs.png",
-  },
-  {
     name: "Git",
     icon: "https://i.ibb.co/Y2mgwt7/git.png",
   },
-  // {
-  //   name: "Vite JS",
-  //   icon: "https://i.ibb.co/TWLrQSY/vite.png",
-  // },
   {
     name: "Docker",
     icon: "https://i.ibb.co/xL8Vw8P/docker.png",

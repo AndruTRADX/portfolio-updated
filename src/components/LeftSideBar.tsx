@@ -14,7 +14,7 @@ const LeftSideBar = () => {
           Fullstack Developer
         </p>
         <p className="text-p-1">
-          Focusing in creating efficient and scalable solutions, delivering an
+          Focusing in creating efficient, scalable and stable solutions, delivering an
           exceptional user experience.
         </p>
 
