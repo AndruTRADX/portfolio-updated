@@ -24,11 +24,11 @@ export const ProjectsData: ProjectDataType[] = [
     image: "https://i.ibb.co/ysw1RzS/image-2024-01-10-142339062.png",
   },
   {
-    name: "NZ Walks (API)",
+    name: "Twitter Clone API",
     description:
-      "A CRUD API built using ASP.NET with C#, allowing users to upload files to create hiking trails across New Zealand with Auth. Deployed on Azure.",
-    project: "https://app-nzwalks-eastus-dev-069.azurewebsites.net/api/regions",
-    github: "https://github.com/AndruTRADX/NZWalks.API",
-    image: "https://i.ibb.co/5WxC5cm/image-2024-05-03-110214547.png",
+      "Explore the functionalities of a Twitter-like API developed using C# and .NET technologies. This API enables users to create tweets, interact with comments, manage profiles, and more, all while emphasizing scalability and security.",
+    project: "https://app-twitterclone-eastus-dev-001.azurewebsites.net/api/tweets",
+    github: "https://github.com/AndruTRADX/TwitterClone.API",
+    image: "https://i.ibb.co/WxtzkL6/image-2024-05-13-162416450.png",
   },
 ];

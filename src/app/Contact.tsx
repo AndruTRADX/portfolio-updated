@@ -71,8 +71,9 @@ const Contact = () => {
   return (
     <>
       <aside id="contact" className="flex-col flex pt-14 justify-between gap-4">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
         <h2 className="subtitle-p-1 m-0">Contact</h2>
+        <span className="text-primary font-bold mb-3">/</span>
         <span className="text-light-1/50 font-semibold mb-3">adxcontacto@gmail.com</span>
         </div>
 
