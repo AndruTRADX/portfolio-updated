@@ -7,7 +7,7 @@ type ImageNativeTypes = ImgHTMLAttributes<HTMLImageElement>;
 
 type Props = LazyImageProps & ImageNativeTypes;
 
-export default function LazyImage({ src, className }: Props) {
+export default function LazyImage({ src, alt, className }: Props) {
   const node = useRef<HTMLImageElement>(null);
   const [currentSrc, setCurrentSrc] = useState<string | undefined>(base64img);
 
@@ -36,7 +36,7 @@ export default function LazyImage({ src, className }: Props) {
     <img
       ref={node}
       src={currentSrc}
-      alt="loading image"
+      alt={alt}
       className={className}
     />
   );

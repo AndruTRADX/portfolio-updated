@@ -10,12 +10,12 @@ const ContactCard = ({ contactMethod }: ContactCardProps) => {
       href={contactMethod.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex gap-3 items-center p-2 rounded-xl bg-dark-2 hover:bg-dark-3 transition-colors duration-300 group"
+      className="flex gap-3 items-center rounded-xl transition-colors duration-300 group"
     >
       <img
         src={contactMethod.icon}
         alt={contactMethod.name}
-        className="w-14 h-14 opacity-70 transition hover:opacity-100 hover:scale-110"
+        className="w-16 h-16 opacity-70 transition hover:opacity-100 hover:scale-110"
       />
 
       <div className="flex flex-col overflow-hidden">

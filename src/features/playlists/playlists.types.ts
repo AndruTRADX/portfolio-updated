@@ -5,3 +5,5 @@ export type YoutubePlaylist = {
   thumbnail: string;
   itemCount: number;
 };
+
+export type PlaylistsStatus = "loading" | "error" | "ready";

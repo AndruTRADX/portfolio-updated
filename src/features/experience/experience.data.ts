@@ -4,7 +4,7 @@ export const ExperienceData: ExperienceDataType[] = [
   {
     role: "Full Stack Engineer",
     company: "Nuaav",
-    period: "May 2026 - Present · 3 mos",
+    period: "May 2026 - Present",
     location: "Remote",
     description:
       "Full Stack Developer at Nuaav. I build and maintain web applications using React, .NET Core (C#) and SQL Server.",

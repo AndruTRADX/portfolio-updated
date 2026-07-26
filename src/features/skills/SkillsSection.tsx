@@ -3,9 +3,15 @@ import { technologies } from "./skills.data";
 
 const SkillsSection = () => {
   return (
-    <aside id="skills" className="flex flex-col pt-11">
-      <h2 className="subtitle-p-1">Skills</h2>
-      <div className="grid grid-cols-4 max-[500px]:grid-cols-3 gap-x-2 gap-y-3 mt-6">
+    <section
+      id="skills"
+      aria-labelledby="skills-heading"
+      className="flex flex-col pt-14"
+    >
+      <h2 id="skills-heading" className="subtitle-p-1">Skills</h2>
+      <p className="text-p-1 mb-4">The tools and technologies I reach for the most.</p>
+
+      <div className="grid grid-cols-4 max-[500px]:grid-cols-3 gap-x-2 gap-y-3">
         {technologies.map((item) => (
           <div
             key={`tech-icon-${item.name}`}
@@ -22,7 +28,7 @@ const SkillsSection = () => {
           </div>
         ))}
       </div>
-    </aside>
+    </section>
   );
 };
 

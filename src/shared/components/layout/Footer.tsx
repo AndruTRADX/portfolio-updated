@@ -4,9 +4,9 @@ const Footer = () => {
       <div className="footer-gradient hidden md:flex" />
       <div className="footer-gradient-md flex md:hidden" />
       <hr className="border-light-2" />
-      <h2 className="text-light-1 opacity-80 font-extrabold text-2xl">
+      <p className="text-light-1 opacity-80 font-extrabold text-2xl">
         AndruTRADX
-      </h2>
+      </p>
       <p className="text-p-2">
         AndruTRADX © {new Date().getFullYear()} Fullstack developer. All rights reserved.
       </p>

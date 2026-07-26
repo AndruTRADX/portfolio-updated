@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 import { getPlaylists } from "../api/youtubeApi";
-import { YoutubePlaylist } from "../playlists.types";
-
-type Status = "loading" | "error" | "ready";
+import { PlaylistsStatus, YoutubePlaylist } from "../playlists.types";
 
 export function usePlaylists() {
   const [playlists, setPlaylists] = useState<YoutubePlaylist[]>([]);
-  const [status, setStatus] = useState<Status>("loading");
+  const [status, setStatus] = useState<PlaylistsStatus>("loading");
 
   useEffect(() => {
     let cancelled = false;

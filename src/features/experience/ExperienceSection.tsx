@@ -3,8 +3,15 @@ import { ExperienceData } from "./experience.data";
 
 const ExperienceSection = () => {
   return (
-    <aside id="experience" className="flex-col flex pt-14 justify-between gap-4">
-      <h2 className="subtitle-p-1">Experience</h2>
+    <section
+      id="experience"
+      aria-labelledby="experience-heading"
+      className="flex-col flex pt-14 justify-between gap-4"
+    >
+      <h2 id="experience-heading" className="subtitle-p-1">
+        Experience
+      </h2>
+      <p className="text-p-1">Where I've worked and what I've been building.</p>
 
       <div className="flex flex-col">
         {ExperienceData.map((item, index) => (
@@ -15,7 +22,7 @@ const ExperienceSection = () => {
           />
         ))}
       </div>
-    </aside>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@ import { MediaType } from "@/shared/constants/media.types";
 
 const SocialIcons = ({ media }: { media: MediaType }) => {
   return (
-    <a href={media.link} target="_blank">
+    <a href={media.link} target="_blank" rel="noopener noreferrer">
       <img
         src={media.icon}
         alt={media.name}

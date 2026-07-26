@@ -3,7 +3,7 @@ import GridBg from "./components/GridBg";
 
 const HomeSection = () => {
   return (
-    <main className="min-h-screen flex justify-center items-center relative">
+    <section className="min-h-screen flex justify-center items-center relative">
       <GridBg />
 
       <article className="relative flex justify-center items-center flex-col mt-40">
@@ -17,13 +17,13 @@ const HomeSection = () => {
           Hi, I'm{" "}
           <span className="font-extrabold primary-t-gradient">AndruTRADX</span>
         </h1>
-        <h2 className="text-2xl font-semibold z-20 secondary-t-gradient tracking-tight underline decoration-primary">
+        <p className="text-2xl font-semibold z-20 secondary-t-gradient tracking-tight underline decoration-primary">
           Fullstack Developer
-        </h2>
+        </p>
       </article>
 
       <DownIcon />
-    </main>
+    </section>
   );
 };
 

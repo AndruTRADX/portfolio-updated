@@ -1,12 +1,15 @@
 const AboutSection = () => {
   const yearsOfExp: number =
-    new Date().getFullYear() - new Date("01-01-2024").getFullYear();
+    new Date().getFullYear() - new Date("2025-01-01").getFullYear();
 
   return (
-    <aside
+    <section
       id="about"
-      className="flex-col flex max-xmd:px-2 justify-between gap-4 pt-24"
+      aria-labelledby="about-heading"
+      className="flex-col flex max-xmd:px-2 justify-between gap-4 pt-14"
     >
+      <h2 id="about-heading" className="subtitle-p-1 mt-2">About Me</h2>
+
       <p className="text-p-1">
         Hi there! I'm Andrés Rodriguez, a <span className="text-p-1-focus">software developer</span>,
         proudly Colombian.
@@ -31,7 +34,7 @@ const AboutSection = () => {
         I'm someone who never gets tired of learning, always staying current to
         keep pace with what the industry demands.
       </p>
-    </aside>
+    </section>
   );
 };
 

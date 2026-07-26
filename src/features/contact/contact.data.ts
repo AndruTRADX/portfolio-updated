@@ -6,6 +6,6 @@ export const contactMethods: ContactType[] = [
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/andrutradx/",
     icon: LinkedIn,
-    description: "Ping me LinkedIn and let's keep in touch"
-  },
+    description: "Ping me on LinkedIn and let's keep in touch",
+  }
 ];
