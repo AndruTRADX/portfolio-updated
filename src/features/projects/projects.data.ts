@@ -31,6 +31,6 @@ export const ProjectsData: ProjectDataType[] = [
       "A real-time chat app built with Flask and Flask-SocketIO, backed by MySQL. Users create or join chat rooms with a room code and exchange messages instantly over WebSockets, with full history persisted and reloaded whenever someone re-enters a room. Built as a university project.",
     project: "https://github.com/AndruTRADX/realtime-chat-python",
     github: "https://github.com/AndruTRADX/realtime-chat-python",
-    image: "https://i.ibb.co/WxtzkL6/image-2024-05-13-162416450.png",
+    image: "https://i.ibb.co/9HYp7nSZ/image-2026-07-26-141650964.png",
   },
 ];
