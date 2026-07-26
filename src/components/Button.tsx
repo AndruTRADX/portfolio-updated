@@ -18,7 +18,7 @@ const Button = ({ text, state, textState, onClick, outline }: ButtonType) => {
           outline
             ? "bg-dark-2 text-light-1  group-hover:bg-dark-1"
             : "bg-primary text-dark-1 border-2 border-dark-0"
-        } relative px-7 py-2.5 rounded-md group-hover:text-light-1 z-20 m-[3px] text-md transition capitalize`}
+        } relative px-7 py-2.5 rounded-md group-hover:text-light-1 z-20 m-0.75 text-md transition capitalize`}
       >
         {state && textState ? textState : text}
       </div>

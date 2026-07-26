@@ -1,48 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-input, textarea {
-  color: #fbfbfbff;
+/* Coloca aquí los valores reales de tu paleta.
+   Antes vivían en tailwind.config.js -> theme.extend.colors */
+@theme {
+  --color-primary: #8453dd;
+  --color-secondary: #3d0aaf;
+  --color-light-1: #fbfbfbff;
+  --color-light-2: #89909aff;
+  --color-light-3: #5E5D61;
+  --color-dark-0: #09080c;
+  --color-dark-1: #110f14;
+  --color-dark-2: #1a1820;
+  --color-dark-3: #282234;
 }
 
-.primary-b-gradient {
-  @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+@layer base {
+
+  input,
+  textarea {
+    color: #fbfbfbff;
+  }
 }
 
-.primary-t-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary
+@utility primary-b-gradient {
+  @apply bg-linear-to-r from-cyan-500 to-blue-500;
 }
 
-.secondary-t-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-b from-light-1 to-light-2
+@utility primary-t-gradient {
+  @apply bg-clip-text text-transparent bg-linear-to-b from-primary to-secondary;
 }
 
-.subtitle-p-1 {
-  @apply bg-clip-text text-light-1/90 text-2xl font-semibold mb-4
+@utility secondary-t-gradient {
+  @apply bg-clip-text text-transparent bg-linear-to-b from-light-1 to-light-2;
 }
 
-.subtitle-p-2 {
-  @apply text-light-1 text-base font-medium
+@utility subtitle-p-1 {
+  @apply bg-clip-text text-light-1/90 text-2xl font-semibold mb-4;
 }
 
-.text-p-1 {
-  @apply text-base font-normal text-light-1/50 leading-6
+@utility subtitle-p-2 {
+  @apply text-light-1 text-base font-medium;
 }
 
-.text-p-1-focus {
-  @apply text-base font-medium text-light-1/90 leading-6
+@utility text-p-1 {
+  @apply text-base font-normal text-light-1/50 leading-6;
 }
 
-.text-p-2 {
-  @apply text-sm font-normal text-light-1/50 leading-5
+@utility text-p-1-focus {
+  @apply text-base font-medium text-light-1/90 leading-6;
 }
 
-.down-arrow {
-  @apply w-6 h-5 blinking-arrow group-hover:scale-110 transition-transform duration-300 object-cover
+@utility text-p-2 {
+  @apply text-sm font-normal text-light-1/50 leading-5;
 }
 
+@utility down-arrow {
+  @apply w-6 h-5 blinking-arrow group-hover:scale-110 transition-transform duration-300 object-cover;
+}
 
+@utility css-invert {
+  @apply invert-[50%] brightness-200;
+}
+
+@utility blinking-arrow {
+  animation: blink 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@utility blinking-color {
+  animation: blinkColor 1.9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@utility moving-arrow_container {
+  animation: move 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
 
 @media (min-width: 500px) {
   .grid-project-card {
@@ -67,8 +97,6 @@ input, textarea {
   position: absolute;
   width: 150px;
   height: 70px;
-  left: 50%;
-  bottom: 0;
   background: linear-gradient(45deg, #8453ddff, #3d0aafff);
   filter: blur(100px);
   bottom: 0;
@@ -78,64 +106,61 @@ input, textarea {
 }
 
 @keyframes blink {
-  0%, 50%, 100% {
+
+  0%,
+  50%,
+  100% {
     opacity: 0.9;
   }
-  25%, 75% {
+
+  25%,
+  75% {
     opacity: 0.05;
   }
 }
 
 @keyframes blinkColor {
-  0%, 50%, 100% {
+
+  0%,
+  50%,
+  100% {
     background-color: #8453ddff;
   }
-  25%, 75% {
+
+  25%,
+  75% {
     background-color: #3d0aafff;
   }
 }
 
 @keyframes move {
-  0%, 50%, 100% {
+
+  0%,
+  50%,
+  100% {
     transform: translateY(0px);
   }
-  25%, 75% {
+
+  25%,
+  75% {
     transform: translateY(4px);
   }
 }
 
-.blinking-arrow {
-  animation: blink 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-.blinking-color {
-  animation: blinkColor 1.9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+::-webkit-scrollbar-track {
+  background: #1a1820;
+  cursor: pointer;
 }
 
-.moving-arrow_container {
-  animation: move 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+::-webkit-scrollbar-thumb {
+  background: #8453ddff;
 }
 
-@layer utilities {
-  .css-invert {
-    @apply invert-[50%] brightness-200;
-  }
-
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #1a1820;
-    cursor: pointer;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #8453ddff;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    cursor: grabbing;
-  }
+::-webkit-scrollbar-thumb:hover {
+  cursor: grabbing;
 }
