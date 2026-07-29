@@ -3,7 +3,7 @@ import { ContactType } from "./contact.types";
 
 export const contactMethods: ContactType[] = [
   {
-    name: "LinkedIn",
+    name: "LinkedIn / andrutradx",
     link: "https://www.linkedin.com/in/andrutradx/",
     icon: LinkedIn,
     description: "Ping me on LinkedIn and let's keep in touch",

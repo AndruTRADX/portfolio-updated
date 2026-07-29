@@ -17,7 +17,7 @@ const ProjectCard = ({ projectData }: { projectData: ProjectDataType }) => {
 
       <div className="absolute inset-0.75 rounded overflow-hidden pointer-events-none">
         <div
-          className="absolute inset-0 scale-110 bg-cover bg-center blur-xs"
+          className="absolute inset-0 duration-300 group-hover:scale-120 group-hover:rotate-4 bg-cover bg-center blur-xs"
           style={{ backgroundImage: `url(${projectData.image})` }}
         />
       </div>
